@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./custom.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/022bd1e044.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="bg-gray-500 flex justify-between items-center py-4 px-[5%] md:px-[3%] fixed w-full z-10"
+    >
+      <div class="hidden text-white md:block">LOGO</div>
+      <div class="flex items-center md:hidden">
+        <i class="pr-2 text-white fa-solid fa-user fa-lg"></i>
+        <i class="text-white fa-solid fa-angle-down"></i>
+      </div>
+      <input type="search" placeholder="Search" class="w-1/2 px-4 py-1" />
+      <div class="items-center hidden md:flex">
+        <i class="pr-8 text-white fa-solid fa-bell fa-lg"></i>
+        <i class="pr-2 text-white fa-solid fa-user fa-lg"></i>
+        <p class="px-2 text-white">Ryan Yeap</p>
+        <i class="text-white fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-center md:hidden">
+        <i class="text-white fa-solid fa-bell fa-lg"></i>
+      </div>
+    </nav>
+
+    <footer
+      id="bottom-nav"
+      class="bg-gray-500 block md:hidden bottom-0 px-[5%] md:px-[3%] fixed w-full z-10"
+    >
+      <ul class="flex justify-between">
+        <a href="index.html">
+          <li class="py-3 text-center bg-gray-500">
+            <i class="fa-solid fa-gauge fa-lg fa-fw"></i>
+            <p class="text-sm lg:text-base">Dashboard</p>
+          </li>
+        </a>
+        <li class="py-3 text-center hover:bg-gray-500">
+          <i class="fa-solid fa-users fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Users</p>
+        </li>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-boxes-stacked fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Products</p>
+        </li>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-hand-holding-dollar fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Revenue</p>
+        </li>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-file-invoice-dollar fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Report</p>
+        </li>
+      </ul>
+    </footer>
+
+    <aside
+      class="fixed left-0 z-10 hidden w-1/6 h-full bg-green-500 top-16 md:block"
+    >
+      <ul class="py-10">
+        <a href="index.html">
+          <li class="flex items-center w-full px-[18%] py-3 hover:bg-gray-500">
+            <span class="pr-4">
+              <i class="fa-solid fa-gauge fa-lg fa-fw"></i>
+            </span>
+            <p class="text-sm lg:text-base">Dashboard</p>
+          </li>
+        </a>
+        <li class="flex items-center px-[18%] py-3 bg-gray-500">
+          <span class="pr-4">
+            <i class="fa-solid fa-users fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Users</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-boxes-stacked fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Products</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-chart-line fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Sales</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-hand-holding-dollar fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Revenue</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-file-invoice-dollar fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Report</p>
+        </li>
+      </ul>
+      <div class="flex items-center px-[18%] py-72">
+        <span class="pr-4">
+          <i class="fa-solid fa-gear fa-lg fa-fw"></i>
+        </span>
+        <p>Settings</p>
+      </div>
+    </aside>
+
+    <main class="relative w-full top-16 md:w-5/6 md:left-[16.66%]">
+      <section class="px-[5%] md:px-[3.6%] pt-8 pb-32 md:pb-20">
+        <div class="pb-10 text-3xl font-bold">User Database</div>
+        <div class="overflow-x-scroll md:overflow-x-hidden">
+          <table
+            class="w-full mr-[70px] border-collapse table-fixed md:table-auto"
+          >
+            <thead class="bg-gray-500">
+              <tr>
+                <th class="w-16 md:w-auto">ID</th>
+                <th class="w-80 md:w-auto">Name</th>
+                <th class="w-64 md:w-auto">E-mail</th>
+                <th class="w-36 md:w-auto">Status</th>
+                <th
+                  class="absolute right-0 top-auto md:relative bg-red-500 mr-[5%]"
+                >
+                  Detail
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Yeap Jia Yung</td>
+                <td>yjy@gmail.com</td>
+                <td>Active</td>
+                <td
+                  class="absolute right-0 top-auto md:relative bg-red-500 mr-[5%] w-[70px]"
+                >
+                  <button class="detail-btn">
+                    <i class="fa-solid fa-list"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Yap Shin Xu</td>
+                <td>ysx@gmail.com</td>
+                <td>Inactive</td>
+                <td
+                  class="absolute right-0 top-auto md:relative bg-red-500 mr-[5%] w-[70px]"
+                >
+                  <button class="detail-btn">
+                    <i class="fa-solid fa-list"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="detail-view"
+      class="fixed hidden w-1/2 -translate-x-1/2 -translate-y-1/2 md:w-1/3 top-1/2 left-1/2"
+    ></div>
+
+    <script>
+      const detailButtons = document.querySelectorAll(".detail-btn");
+      const detailView = document.getElementById("detail-view");
+
+      detailButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const row = button.parentNode.parentNode;
+          const id = row.cells[0].textContent;
+          const name = row.cells[1].textContent;
+          const email = row.cells[2].textContent;
+          const status = row.cells[3].textContent;
+
+          detailView.innerHTML = `
+            <div class="grid gap-4 p-5 bg-white border-2 border-black">
+              <div class="absolute top-0 right-0 px-4 py-1 -mt-2 -mr-2 bg-red-500 border-2 close-btn">
+                <i class="text-white fa-solid fa-xmark"></i>
+              </div>
+              <p>ID: ${id}</p>
+              <p>Name: ${name}</p>
+              <p>E-mail: ${email}</p>
+              <p>Status: ${status}</p>
+            </div>
+            `;
+
+          detailView.style.display = "block";
+
+          document.querySelectorAll(".close-btn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+              detailView.style.display = "none";
+            });
+          });
+        });
+      });
+
+      // window.onclick = function (event) {
+      //   if (event.target == closeDetailsModal) {
+      //     detailView.style.display = "none";
+      //   }
+      // };
+    </script>
+  </body>
+</html>

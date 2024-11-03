@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/022bd1e044.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="bg-gray-500 flex justify-between items-center py-4 px-[5%] md:px-[3%] fixed w-full z-10"
+    >
+      <div class="hidden text-white md:block">LOGO</div>
+      <div class="flex items-center md:hidden">
+        <i class="pr-2 text-white fa-solid fa-user fa-lg"></i>
+        <i class="text-white fa-solid fa-angle-down"></i>
+      </div>
+      <input type="search" placeholder="Search" class="w-1/2 px-4 py-1" />
+      <div class="items-center hidden md:flex">
+        <i class="pr-8 text-white fa-solid fa-bell fa-lg"></i>
+        <i class="pr-2 text-white fa-solid fa-user fa-lg"></i>
+        <p class="px-2 text-white">Ryan Yeap</p>
+        <i class="text-white fa-solid fa-angle-down"></i>
+      </div>
+      <div class="flex justify-center md:hidden">
+        <i class="text-white fa-solid fa-bell fa-lg"></i>
+      </div>
+    </nav>
+
+    <footer
+      id="bottom-nav"
+      class="bg-gray-500 block md:hidden bottom-0 px-[5%] md:px-[3%] fixed w-full z-10"
+    >
+      <ul class="flex justify-between">
+        <li class="py-3 text-center bg-gray-500">
+          <i class="fa-solid fa-gauge fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Dashboard</p>
+        </li>
+        <a href="users.html">
+          <li class="py-3 text-center hover:bg-gray-500">
+            <i class="fa-solid fa-users fa-lg fa-fw"></i>
+            <p class="text-sm lg:text-base">Users</p>
+          </li>
+        </a>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-boxes-stacked fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Products</p>
+        </li>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-hand-holding-dollar fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Revenue</p>
+        </li>
+        <li class="py-3 text-center">
+          <i class="fa-solid fa-file-invoice-dollar fa-lg fa-fw"></i>
+          <p class="text-sm lg:text-base">Report</p>
+        </li>
+      </ul>
+    </footer>
+
+    <aside
+      class="fixed left-0 z-10 hidden w-1/6 h-full bg-red-500 top-16 md:block"
+    >
+      <ul class="py-10">
+        <li class="flex items-center w-full px-[18%] py-3 bg-gray-500">
+          <span class="pr-4">
+            <i class="fa-solid fa-gauge fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Dashboard</p>
+        </li>
+        <a href="users.html">
+          <li class="flex items-center px-[18%] py-3 hover:bg-gray-500">
+            <span class="pr-4">
+              <i class="fa-solid fa-users fa-lg fa-fw"></i>
+            </span>
+            <p class="text-sm lg:text-base">Users</p>
+          </li>
+        </a>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-boxes-stacked fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Products</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-chart-line fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Sales</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-hand-holding-dollar fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Revenue</p>
+        </li>
+        <li class="flex items-center px-[18%] py-3">
+          <span class="pr-4">
+            <i class="fa-solid fa-file-invoice-dollar fa-lg fa-fw"></i>
+          </span>
+          <p class="text-sm lg:text-base">Report</p>
+        </li>
+      </ul>
+      <div class="flex items-center px-[18%] py-72">
+        <span class="pr-4">
+          <i class="fa-solid fa-gear fa-lg fa-fw"></i>
+        </span>
+        <p>Settings</p>
+      </div>
+    </aside>
+
+    <main class="relative w-full top-16 md:w-5/6 md:left-[16.66%]">
+      <section class="px-[5%] md:px-[3.6%] pt-8 pb-20 md:pb-0">
+        <div class="text-3xl font-bold">Hello Ryan Yeap</div>
+        <div class="pt-2">Here is your general overview for the week</div>
+
+        <div
+          class="grid items-center gap-4 py-10 md:grid-cols-3 md:justify-between"
+        >
+          <div class="p-5 bg-gray-400 md:w-full">
+            <div class="items-center justify-between hidden pb-4 md:flex">
+              <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i>
+              <p>View Details</p>
+            </div>
+            <div class="grid gap-2">
+              <div class="flex justify-between">
+                <div class="flex items-center">
+                  <span class="block pr-2 md:hidden">
+                    <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i
+                  ></span>
+                  <p class="text-2xl font-bold">Revenue</p>
+                </div>
+                <p class="block pr-2 md:hidden">View Details</p>
+              </div>
+              <p class="text-xl font-bold">
+                MYR <span class="text-4xl">3200.00</span>
+              </p>
+              <p>+450%</p>
+            </div>
+          </div>
+
+          <div class="p-5 bg-gray-400 md:w-full">
+            <div class="items-center justify-between hidden pb-4 md:flex">
+              <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i>
+              <p>View Details</p>
+            </div>
+            <div class="grid gap-2">
+              <div class="flex justify-between">
+                <div class="flex items-center">
+                  <span class="block pr-2 md:hidden">
+                    <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i
+                  ></span>
+                  <p class="text-2xl font-bold">Sales</p>
+                </div>
+                <p class="block pr-2 md:hidden">View Details</p>
+              </div>
+              <p class="text-xl font-bold">
+                <span class="text-4xl">55</span>Units
+              </p>
+              <p>+200%</p>
+            </div>
+          </div>
+
+          <div class="p-5 bg-gray-400 md:w-full">
+            <div class="items-center justify-between hidden pb-4 md:flex">
+              <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i>
+              <p>View Details</p>
+            </div>
+            <div class="grid gap-2">
+              <div class="flex justify-between">
+                <div class="flex items-center">
+                  <span class="block pr-2 md:hidden">
+                    <i class="fa-solid fa-hand-holding-dollar fa-xl fa-fw"></i
+                  ></span>
+                  <p class="text-2xl font-bold">Users</p>
+                </div>
+                <p class="block pr-2 md:hidden">View Details</p>
+              </div>
+              <p class="text-4xl font-bold">10</p>
+              <p>+100%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
